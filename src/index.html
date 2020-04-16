@@ -1,14 +1,282 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<meta charset="utf-8">
-	<title> testing title</title>
-	<base href="/">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
 
-<body>
-</body>
+  <body>
+  	<section class="section">
+	  <div class="container">
+			<div class="columns" id="header-area">
+				<div class="column is-three-quarters">
+					<h1 class='title'>What It's For</h1>
+					<h2 class='subtitle'>Simple explanations of tech tools.</h2>
+				</div>
+				<div class="column is-inline-block">
+				    <div class="is-pulled-right">
+						<p class='is-inline-flex' id='text-nav'>About</p>
+						<div class="buttons is-inline-flex">
+							<button class="button is-link">Add a WIF</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="columns" id="sub-header-area">
+				<div class="column is-three-quarters">
 
+					<div class="field is-horizontal">
+						<div class="field-body">
+							<div class="field">
+								<p class="control is-expanded has-icons-left">
+								<input class="input" type="text" placeholder='Search for a tech tool (Press "/" to focus)' id="search-bar">
+								<span class="icon is-small is-left">
+									<i class="fas fa-search"></i>
+								</span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="columns is-mobile" id='search-results'>
+						<div class="column">
+							<div class="box" name='postgres'>
+								<article class="media">
+									<div class="media-left">
+										<span class="icon is-small">
+											<i class="fas fa-database" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="media-content">
+										<p><strong>PostgreSQL</strong></p>
+									</div>
+								</article>
+
+								<div class="tags has-addons clarity-meter">
+									<span class="tag">Clarity:</span>
+									<span class="tag is-success">97%</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="column">
+							<div class="box" name='mysql'>
+								<article class="media">
+									<div class="media-left">
+										<span class="icon is-small">
+											<i class="fas fa-database" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="media-content">
+										<p><strong>mysql</strong></p>
+									</div>
+								</article>
+
+								<div class="tags has-addons clarity-meter">
+									<span class="tag">Clarity:</span>
+									<span class="tag is-success">97%</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="column">
+							<div class="box" name='mongodb'>
+								<article class="media">
+									<div class="media-left">
+										<span class="icon is-small">
+											<i class="fas fa-database" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="media-content">
+										<p><strong>mongodb</strong></p>
+									</div>
+								</article>
+
+								<div class="tags has-addons clarity-meter">
+									<span class="tag">Clarity:</span>
+									<span class="tag is-warning">59%</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="column">
+							<div class="box" name='aurora'>
+								<article class="media">
+									<div class="media-left">
+										<span class="icon is-small">
+											<i class="fas fa-database" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="media-content">
+										<p><strong>aurora</strong></p>
+									</div>
+								</article>
+
+								<div class="tags has-addons clarity-meter">
+									<span class="tag">Clarity:</span>
+									<span class="tag is-danger">39%</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="column">
+							<div class="box" name='oracle'>
+								<article class="media">
+									<div class="media-left">
+										<span class="icon is-small">
+											<i class="fas fa-database" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="media-content">
+										<p><strong>oracle</strong></p>
+									</div>
+								</article>
+
+								<div class="tags has-addons clarity-meter">
+									<span class="tag">Clarity:</span>
+									<span class="tag is-success">97%</span>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="columns is-mobile">
+						<div class="column">
+							<div class="box" name='microsoft-sql-server'>
+								<article class="media">
+									<div class="media-left">
+										<span class="icon is-small">
+											<i class="fas fa-database" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="media-content">
+										<p><strong>microsoft-sql-server</strong></p>
+									</div>
+								</article>
+
+								<div class="tags has-addons clarity-meter">
+									<span class="tag">Clarity:</span>
+									<span class="tag is-success">97%</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="column">
+							<div class="box" name='postgres'>
+								<article class="media">
+									<div class="media-left">
+										<span class="icon is-small">
+											<i class="fas fa-database" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="media-content">
+										<p><strong>PostgreSQL</strong></p>
+									</div>
+								</article>
+
+								<div class="tags has-addons clarity-meter">
+									<span class="tag">Clarity:</span>
+									<span class="tag is-success">97%</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="column">
+							<div class="box" name='postgres'>
+								<article class="media">
+									<div class="media-left">
+										<span class="icon is-small">
+											<i class="fas fa-database" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="media-content">
+										<p><strong>PostgreSQL</strong></p>
+									</div>
+								</article>
+
+								<div class="tags has-addons clarity-meter">
+									<span class="tag">Clarity:</span>
+									<span class="tag is-success">97%</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="column">
+							<div class="box" name='postgres'>
+								<article class="media">
+									<div class="media-left">
+										<span class="icon is-small">
+											<i class="fas fa-database" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="media-content">
+										<p><strong>PostgreSQL</strong></p>
+									</div>
+								</article>
+
+								<div class="tags has-addons clarity-meter">
+									<span class="tag">Clarity:</span>
+									<span class="tag is-success">97%</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="column">
+							<div class="box" name='postgres'>
+								<article class="media">
+									<div class="media-left">
+										<span class="icon is-small">
+											<i class="fas fa-database" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="media-content">
+										<p><strong>PostgreSQL</strong></p>
+									</div>
+								</article>
+
+								<div class="tags has-addons clarity-meter">
+									<span class="tag">Clarity:</span>
+									<span class="tag is-success">97%</span>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="column">
+					<div class="columns is-mobile">
+					<div class="column">
+						<article class="message is-info">
+						<div class="message-header">
+							Latest Updates
+						</div>
+						<div class="message-body">
+							<strong>May 1st, 2020:</strong><p>Things happened.</p>
+							<strong>May 2nd, 2020:</strong><p>Etc..</p>
+						</div>
+						</article>
+
+						<div class="notification">
+							This is an advertisement.
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  </body>
+
+	<script src='javascript/main.js'></script>
 </html>
