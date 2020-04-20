@@ -2,7 +2,8 @@ dev-setup:
 	sudo gem install mustache
 
 build:
-	mustache src/assets/copy.yaml src/html/index.mustache > src/index.html
+	mustache src/html-templates/header.yaml src/html-templates/index.mustache > src/index.html
+	python3 build_wif_pages.py
 
 deploy:
 	make build

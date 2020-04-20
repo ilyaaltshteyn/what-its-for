@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta id='wif-id' content="wif_id_goes_here" name="tech_name_goes_here">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What It's For</title>
+
+    <base href="/">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    {{{ header_html }}}
+  <div class="container">
+    <h2 class='title is-5' id='wif-name'></h2>
+  </div>
+
+	<section class="section">
+		<div class="container">
+      <div class="columns">
+        <div class="column is-three-quarters"  id='explanations-list'>
+          <progress class="progress is-small is-primary" max="100"></progress>
+        </div>
+
+        {{{ sidebar_html }}}
+      </div>
+    </div>
+
+  </section>
+
+
+
+  </body>
+
+  <script src='src/javascript/utils.js'></script>
+  <script src='src/javascript/wif.js'></script>
+</html>
