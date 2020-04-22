@@ -9,11 +9,12 @@
     <base href="/">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <section class='section'> <div class='container'> <div class='columns has-text-centered-mobile' id='header-area'> <div class='column is-three-quarters'> <a href='src/'><h1 class='title'>What It's For 💡</h1></a> <h2 class='subtitle'>Simple explanations of tech tools.</h2> </div> <div class='column is-inline-block'> <div class='is-pulled-right'> <p class='is-inline-flex is-hidden-mobile' id='text-nav'>About</p> <p class='is-inline-flex is-hidden-mobile' id='text-nav'>Rules</p> <div class='buttons is-inline-flex-tablet'> <button class='button is-link'>Add a WIF</button> </div> </div> </div> </div> </div> </section> 
+    <section class='section'> <div class='container'> <div class='columns has-text-centered-mobile' id='header-area'> <div class='column is-three-quarters'> <a href='src/'><h1 class='title'>What It's For 💡</h1></a> <h2 class='subtitle'>Simple explanations of tech tools.</h2> </div> <div class='column is-inline-block'> <div class='is-pulled-right'> <a href='src/about.html'><p class='is-inline-flex is-hidden-mobile' id='text-nav'>About</p></a> <a href='#'><p class='is-inline-flex is-hidden-mobile' id='text-nav'>Hotkeys</p></a> <a href='src/add-a-wif.html'> <div class='buttons is-inline-flex-tablet'> <button class='button is-link'>Add a WIF</button> </div> </a> </div> </div> </div> </div> </section> 
   <div class="container">
     <h2 class='title is-5' id='wif-name'></h2>
   </div>
@@ -25,17 +26,14 @@
           <progress class="progress is-small is-primary" max="100"></progress>
         </div>
 
-        <div class='column' id='info-section'> <div class='columns'> <div class='column'> <article class='message'> <div class='message-header'> Latest Updates </div> <div class='message-body'> {{{ latest_updates }}} </div> </article>
+        <div class='column' id='info-section'> <div class='columns'> <div class='column'> <div class='field is-horizontal' id='search-bar-controls'> <div class='field-body'> <div class='field has-addons'> <p class='control is-expanded has-icons-left'> <input class='input' type='text' placeholder='Search' id='search-bar'> <span class='icon is-small is-left'> <i class='fas fa-search'></i> </span> </p> <div class='control'> <a class='button is-info' id='search-button' onclick='goHomePageWithSearch()'> Search </a> </div> </div> </div> </div>
 <div class='notification'> This is an advertisement. </div> </div> </div> </div> 
       </div>
     </div>
-
   </section>
-
-
 
   </body>
 
-  <script src='src/javascript/utils.js'></script>
+   <script src='src/javascript/utils.js'></script> <script src='src/javascript/search.js'></script> <script src='src/javascript/hotkeys.js'></script> 
   <script src='src/javascript/wif.js'></script>
 </html>

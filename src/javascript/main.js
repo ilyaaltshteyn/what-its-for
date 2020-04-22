@@ -1,35 +1,4 @@
-// hot-key to focus search bar
-document.addEventListener('keyup', (e) => {
-  if (e.code === 'Slash') {
-    $('#search-bar').focus();
-  }
-});
-
-// hot-key to search
-document.addEventListener('keyup', (e) => {
-  if (e.code === 'Enter') {
-    $('#search-button').click();
-  }
-});
-
-
 // handle searches
-function searchResults() {
-
-  // start loading spinner
-  $('#search-button').addClass('is-loading');
-
-  var search_string = document.getElementById("search-bar").value;
-  var url = `https://akluxdxdoc.execute-api.us-east-1.amazonaws.com/prod/search?search_string=${search_string}`;
-
-  // make API call and use result to replace contents
-  fetch(url).then(resp => resp.json())
-    .then(replace_search_results)
-    .catch(function(e) {
-    console.log(e);
-  });
-}
-
 function replace_search_results(results_body) {
   var searchbar = $("#search-results");
 
@@ -60,4 +29,4 @@ function replace_search_results(results_body) {
 
 
 // set up on load
-searchResults();
+runSearch();

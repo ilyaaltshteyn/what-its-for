@@ -9,6 +9,7 @@
     <base href="/">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
@@ -25,16 +26,13 @@
           <progress class="progress is-small is-primary" max="100"></progress>
         </div>
 
-        {{{ sidebar_html }}}
+        {{{ sidebar_html_nonhomepage }}}
       </div>
     </div>
-
   </section>
-
-
 
   </body>
 
-  <script src='src/javascript/utils.js'></script>
+  {{{ common_scripts }}}
   <script src='src/javascript/wif.js'></script>
 </html>

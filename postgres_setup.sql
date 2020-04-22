@@ -1,3 +1,16 @@
+create schema frontend;
+create user frontend;
+grant usage on schema frontend to frontend;
+grant select on frontend.tag to frontend;
+grant select on frontend.wif to frontend;
+grant select on frontend.explanation to frontend;
+grant select on frontend.vote to frontend;
+grant insert on frontend.tag to frontend;
+grant insert on frontend.wif to frontend;
+grant insert on frontend.explanation to frontend;
+grant insert on frontend.vote to frontend;
+
+
 create table tag (
     id SERIAL PRIMARY KEY,
     name VARCHAR(512) NOT NULL,

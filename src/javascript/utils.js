@@ -7,6 +7,34 @@ String.format = function() {
   return s;
 }
 
+// add url query string param
+function clear_query_string() {
+  var current_loc = window.location.href;
+
+  if (current_loc.includes('?search=')) {
+    current_loc = current_loc.split('?search=')[0];
+  }
+
+  return current_loc;
+}
+
+function updateSearchParam(key, value)
+{
+  var current_loc = clear_query_string();
+  window.location.href = current_loc + '?' + key + '=' + value;
+}
+
+// get url param
+function getParameterByName(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
 var no_search_results_HTML = `
   <div class="column is-centered">
     <div class="notification is-warning is-light">
@@ -62,8 +90,7 @@ var explanation_base_HTML = `
     </div>
 
     <footer class="card-footer">
-      <p class="card-footer-item">
-        Clear + accurate?
+      <p class="card-footer-item" data-tooltip="Was the explanation clear and accurate?">
         <i class="fas fa-thumbs-up"></i>
         <i class="fas fa-thumbs-down"></i>
       </p>
@@ -75,6 +102,7 @@ var explanation_base_HTML = `
           Share:
           <a href="#"><i class='fab fa-facebook'></i></a>
           <a href="#"><i class='fab fa-twitter'></i></a>
+          <a href="#"><i class='fab fa-linkedin'></i></a>
           <a href="#"><i class='fas fa-copy'></i></a>
         </span>
       </p>

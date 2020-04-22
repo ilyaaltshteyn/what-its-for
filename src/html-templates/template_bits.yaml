@@ -1,0 +1,78 @@
+---
+header_html: "<section class='section'>
+	    <div class='container'>
+			<div class='columns has-text-centered-mobile' id='header-area'>
+				<div class='column is-three-quarters'>
+					<a href='src/'><h1 class='title'>What It's For 💡</h1></a>
+					<h2 class='subtitle'>Simple explanations of tech tools.</h2>
+				</div>
+				<div class='column is-inline-block'>
+				    <div class='is-pulled-right'>
+						<a href='src/about.html'><p class='is-inline-flex is-hidden-mobile' id='text-nav'>About</p></a>
+						<a href='#'><p class='is-inline-flex is-hidden-mobile' id='text-nav'>Hotkeys</p></a>
+						<a href='src/add-a-wif.html'>
+							<div class='buttons is-inline-flex-tablet'>
+								<button class='button is-link'>Add a WIF</button>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	"
+
+sidebar_html_homepage: "<div class='column' id='info-section'>
+          <div class='columns'>
+            <div class='column'>
+              <article class='message'>
+              <div class='message-header'>
+                Latest Updates
+              </div>
+              <div class='message-body'>
+                {{{ latest_updates }}}
+              </div>
+              </article>
+
+              <div class='notification'>
+                This is an advertisement.
+              </div>
+            </div>
+          </div>
+        </div>
+	"
+
+sidebar_html_nonhomepage: "<div class='column' id='info-section'>
+          <div class='columns'>
+						<div class='column'>
+							<div class='field is-horizontal' id='search-bar-controls'>
+								<div class='field-body'>
+									<div class='field has-addons'>
+										<p class='control is-expanded has-icons-left'>
+										<input class='input' type='text' placeholder='Search' id='search-bar'>
+										<span class='icon is-small is-left'>
+											<i class='fas fa-search'></i>
+										</span>
+										</p>
+										<div class='control'>
+											<a class='button is-info' id='search-button' onclick='goHomePageWithSearch()'>
+											Search
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+              <div class='notification'>
+                This is an advertisement.
+              </div>
+            </div>
+          </div>
+        </div>
+	"
+
+common_scripts: "
+	<script src='src/javascript/utils.js'></script>
+	<script src='src/javascript/search.js'></script>
+	<script src='src/javascript/hotkeys.js'></script>
+	"

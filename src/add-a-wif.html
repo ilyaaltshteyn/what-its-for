@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What It's For</title>
+
+    <base href="/">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+	<section class='section'> <div class='container'> <div class='columns has-text-centered-mobile' id='header-area'> <div class='column is-three-quarters'> <a href='src/'><h1 class='title'>What It's For 💡</h1></a> <h2 class='subtitle'>Simple explanations of tech tools.</h2> </div> <div class='column is-inline-block'> <div class='is-pulled-right'> <a href='src/about.html'><p class='is-inline-flex is-hidden-mobile' id='text-nav'>About</p></a> <a href='#'><p class='is-inline-flex is-hidden-mobile' id='text-nav'>Hotkeys</p></a> <a href='src/add-a-wif.html'> <div class='buttons is-inline-flex-tablet'> <button class='button is-link'>Add a WIF</button> </div> </a> </div> </div> </div> </div> </section> 
+
+	<section class="section">
+		<div class="container">
+			<div class="columns is-multiline" id="sub-header-area">
+				<div class="column is-three-quarters">
+					<div class='content'>
+						<article class="message is-danger">
+                            <div class="message-body">
+                                Please: Read the rules before contributing!
+                            </div>
+                        </article>
+
+                        <h2 class='title is-5'>The Rules</h2>
+
+                        Wif explanations must be understandable by an intelligent person with little-to-no knowledge of technology.
+                        Imagine you're writing for an average Sociology professor.
+
+                        <ul>
+                            <li>Reader must not need to google anything to understand your explanation.</li>
+                            <li>Explanation should convey a high-level understanding of the problem the technology solves.</li>
+                            <li>Explanation must present at least 1 real-world example of when the technology would be useful.</li>
+                            <li>Explanation must provide link(s) to further reading that are NOT linking to technical documentation.</li>
+                        </ul>
+
+                        <br>
+                        <br>
+
+                        After you submit, I'll do my best to review your submission within a few days.
+					</div>
+
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Text input">
+                        </div>
+                        </div>
+
+                        <div class="field">
+                        <label class="label">Username</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                        <p class="help is-success">This username is available</p>
+                        </div>
+
+                        <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </div>
+                        <p class="help is-danger">This email is invalid</p>
+                        </div>
+
+                        <div class="field">
+                        <label class="label">Subject</label>
+                        <div class="control">
+                            <div class="select">
+                            <select>
+                                <option>Select dropdown</option>
+                                <option>With options</option>
+                            </select>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Textarea"></textarea>
+                        </div>
+                        </div>
+
+                        <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                            <input type="checkbox">
+                            I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                        </div>
+                        </div>
+
+                        <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                            <input type="radio" name="question">
+                            Yes
+                            </label>
+                            <label class="radio">
+                            <input type="radio" name="question">
+                            No
+                            </label>
+                        </div>
+                        </div>
+
+                        <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link">Submit</button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-link is-light">Cancel</button>
+                        </div>
+                    </div>
+
+					<hr>
+
+				</div>
+
+				<div class='column' id='info-section'> <div class='columns'> <div class='column'> <div class='field is-horizontal' id='search-bar-controls'> <div class='field-body'> <div class='field has-addons'> <p class='control is-expanded has-icons-left'> <input class='input' type='text' placeholder='Search' id='search-bar'> <span class='icon is-small is-left'> <i class='fas fa-search'></i> </span> </p> <div class='control'> <a class='button is-info' id='search-button' onclick='goHomePageWithSearch()'> Search </a> </div> </div> </div> </div>
+<div class='notification'> This is an advertisement. </div> </div> </div> </div> 
+			</div>
+		</div>
+	</section>
+  </body>
+	 <script src='src/javascript/utils.js'></script> <script src='src/javascript/search.js'></script> <script src='src/javascript/hotkeys.js'></script> 
+	<script src='src/javascript/main.js'></script>
+</html>

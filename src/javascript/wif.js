@@ -1,4 +1,4 @@
-// handle searches
+// load explanations
 function wifExplanations() {
 
     var wif_id = $("meta[id=wif-id]").attr('content'),
