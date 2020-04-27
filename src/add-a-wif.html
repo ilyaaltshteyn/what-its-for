@@ -7,6 +7,7 @@
     <title>What It's For</title>
 
     <base href="/">
+    <link rel="stylesheet" href="src/css/add-a-wif.css">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -21,112 +22,92 @@
 			<div class="columns is-multiline" id="sub-header-area">
 				<div class="column is-three-quarters">
 					<div class='content'>
-						<article class="message is-danger">
+						<article class="message is-warning">
                             <div class="message-body">
-                                Please: Read the rules before contributing!
+                                Please: Read the guidelines before contributing!
                             </div>
                         </article>
 
-                        <h2 class='title is-5'>The Rules</h2>
-
-                        Wif explanations must be understandable by an intelligent person with little-to-no knowledge of technology.
-                        Imagine you're writing for an average Sociology professor.
+                        <h2 class='title is-5'>The Guidelines</h2>
 
                         <ul>
+                            <li>Wif explanations must be written for an absolute beginner in the field the technology belongs to.</li>
                             <li>Reader must not need to google anything to understand your explanation.</li>
-                            <li>Explanation should convey a high-level understanding of the problem the technology solves.</li>
-                            <li>Explanation must present at least 1 real-world example of when the technology would be useful.</li>
-                            <li>Explanation must provide link(s) to further reading that are NOT linking to technical documentation.</li>
+                            <li>Explanation should describe the problem the technology solves.</li>
+                            <li>Link(s) to further reading may not link to technical documentation.</li>
                         </ul>
 
+                        After you submit, we'll do our best to review your submission within a few days.
+
                         <br>
                         <br>
 
-                        After you submit, I'll do my best to review your submission within a few days.
+                        <h2 class='title is-5'>Submit your WIF!</h2>
 					</div>
 
                     <div class="field">
-                        <label class="label">Name</label>
-                        <div class="control">
-                            <input class="input" type="text" placeholder="Text input">
-                        </div>
-                        </div>
-
-                        <div class="field">
-                        <label class="label">Username</label>
+                        <label class="label">Technology Name</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                            <input class="input" type="text" placeholder="SQL">
                             <span class="icon is-small is-left">
                             <i class="fas fa-user"></i>
                             </span>
-                            <span class="icon is-small is-right">
-                            <i class="fas fa-check"></i>
-                            </span>
                         </div>
-                        <p class="help is-success">This username is available</p>
-                        </div>
+                        <p class="help is-dark">Please choose the name from the list of options here if it's there.</p>
+                    </div>
 
-                        <div class="field">
-                        <label class="label">Email</label>
+                    <div class="field">
+                        <label class="label">WIF Title</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                            <input class="input" type="text" placeholder="A computer language used to interact with SQL database software">
                             <span class="icon is-small is-left">
-                            <i class="fas fa-envelope"></i>
-                            </span>
-                            <span class="icon is-small is-right">
-                            <i class="fas fa-exclamation-triangle"></i>
+                            <i class="fas fa-sign"></i>
                             </span>
                         </div>
-                        <p class="help is-danger">This email is invalid</p>
-                        </div>
+                    </div>
 
-                        <div class="field">
-                        <label class="label">Subject</label>
+                    <div class="field">
+                        <label class="label">Explanation</label>
                         <div class="control">
-                            <div class="select">
-                            <select>
-                                <option>Select dropdown</option>
-                                <option>With options</option>
-                            </select>
-                            </div>
+                            <textarea class="textarea" placeholder="Please follow the guidelines above!"></textarea>
                         </div>
-                        </div>
+                    </div>
 
-                        <div class="field">
-                        <label class="label">Message</label>
-                        <div class="control">
-                            <textarea class="textarea" placeholder="Textarea"></textarea>
+                    <div class="field">
+                        <label class="label">#1 best link to further reading:</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" placeholder="www.example.com/how-SQL-works.html">
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-link"></i>
+                            </span>
                         </div>
-                        </div>
+                    </div>
 
-                        <div class="field">
+                    <div class="field">
+                        <label class="label">Your Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" id='email-field'>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                        <p class="help is-danger" id='email-validation-error'>Invalid email</p>
+                    </div>
+
+                    <div class="field">
                         <div class="control">
                             <label class="checkbox">
                             <input type="checkbox">
                             I agree to the <a href="#">terms and conditions</a>
                             </label>
                         </div>
-                        </div>
+                    </div>
 
-                        <div class="field">
-                        <div class="control">
-                            <label class="radio">
-                            <input type="radio" name="question">
-                            Yes
-                            </label>
-                            <label class="radio">
-                            <input type="radio" name="question">
-                            No
-                            </label>
-                        </div>
-                        </div>
+                    <br>
 
-                        <div class="field is-grouped">
+                    <div class="field">
                         <div class="control">
-                            <button class="button is-link">Submit</button>
-                        </div>
-                        <div class="control">
-                            <button class="button is-link is-light">Cancel</button>
+                            <button class="button is-link" onclick="submitWif()">Submit</button>
                         </div>
                     </div>
 
@@ -141,5 +122,5 @@
 	</section>
   </body>
 	 <script src='src/javascript/utils.js'></script> <script src='src/javascript/search.js'></script> <script src='src/javascript/hotkeys.js'></script> 
-	<script src='src/javascript/main.js'></script>
+	<script src='src/javascript/add-a-wif.js'></script>
 </html>
